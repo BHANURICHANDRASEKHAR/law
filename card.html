@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+</head>
+<body>
+    <div class="container">
+        <div class="card border-success" style="width:18rem;">
+            <img src='' alt="not found" class="card-img-top" id="img">
+            <div class="card-body">
+                <h1 class="cad-title" id="name"></h1>
+                    <p class="card-text" id="text"></p>
+               
+            </div>
+        </div>
+    </div>
+    <script>
+        alert('hi');
+        let data1=[
+  {
+    img:'https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcQNRq6u074f2Vw5PPR1RGdz8Z39P8Va4oqf-uCRxwjch32t374J8A-GReZ0Z9fo_2cRoUiUyGEjl2djkt0',
+    name1:'Kl Rahul',
+    d:'KL Rahul ; Born, April 18, 1992 ; Mangaluru, Karnataka ; Age, 31 years 147 days ; Teams, India, Karnataka, East Zone, South Zone, Royal Challengers Bangalore, India ...'
+  },{
+    img:'https://upload.wikimedia.org/wikipedia/commons/e/ef/Virat_Kohli_during_the_India_vs_Aus_4th_Test_match_at_Narendra_Modi_Stadium_on_09_March_2023.jpg',
+    name1:'King Kohli',
+    d:'Name, Virat Kohli ; Born, November 05, 1988 ; Age, 34 years 311 days ; Teams, India, Delhi, India Red, India U19, Royal Challengers Bangalore, Board Presidents XI, ..'
+  },
+  {
+    img:'https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcRwaUsqRsyPSEUbA-JYQOKdoHMbna7y_lWjemCBJDHffuYvf05XTSQMqo2M1GUHH3sFn8MAilvcHPmkAdE',
+    name1:'Rohit Sharma',
+    d:'Rohit Sharma ; Born, April 30, 1987 ; Nagpur, Maharashtra ; Age, 36 years 135 days ; Teams, India, Deccan Chargers, India A, India Green, India U19, Mumbai, Mumbai ...'
+  }
+];
+alert('data1[0].name1')
+ document.getElementById('img').src=data1[0].img;
+ document.getElementById('name').innerText=data1[0].name1;
+ document.getElementById('text').innerText=data1[0].d;
+    </script>
+</body>
+</html>
